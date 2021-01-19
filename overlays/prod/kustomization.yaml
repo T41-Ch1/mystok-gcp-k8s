@@ -15,15 +15,15 @@ patchesJson6902:
     kind: ManagedCertificate
     name: mystok-gcp-ssl-cert
   path: domain.json
-- target:
-    kind: Deployment
-    name: mystok-gcp-deploy
-  path: secret_name.json
-- target:
-    kind: Deployment
-    name: mystok-gcp-deploy
-  path: volume_name.json
-- target:
-    kind: Deployment
-    name: mystok-gcp-deploy
-  path: cloudsql_instanceName.json
+#- target:
+#    kind: Deployment
+#    name: mystok-gcp-deploy
+#  path: secret_name.json
+#- target:
+#    kind: Deployment
+#    name: mystok-gcp-deploy
+#  path: volume_name.json
+#- target:
+#    kind: Deployment
+#    name: mystok-gcp-deploy
+#  path: cloudsql_instanceName.json
