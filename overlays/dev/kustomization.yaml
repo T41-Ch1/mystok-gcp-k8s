@@ -1,0 +1,7 @@
+bases:
+  - ../../base
+
+pathces:
+- dev-mystok-gcp-app-deployment.yaml
+- dev-mystok-gcp-ingress.yaml 
+- dev-mystok-gcp-ssl-cert.yaml
