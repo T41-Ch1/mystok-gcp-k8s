@@ -1,7 +1,7 @@
 apiVersion: networking.gke.io/v1beta2
 kind: ManagedCertificate
 metadata:
-  name: mystok-simple-ssl-cert
+  name: mystok-gcp-ssl-cert
 spec:
   domains:
-    - mystok-simple.work
+    - mystok-gcp.work

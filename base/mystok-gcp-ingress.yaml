@@ -3,8 +3,8 @@ kind: Ingress
 metadata:
   name: mystok-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: mystok-simple-ip
-    networking.gke.io/managed-certificates: mystok-simple-ssl-cert
+    kubernetes.io/ingress.global-static-ip-name: mystok-gcp-ip
+    networking.gke.io/managed-certificates: mystok-gcp-ssl-cert
     kubernetes.io/ingress.allow-http: "false"
 spec:
   rules:
@@ -12,5 +12,5 @@ spec:
       paths:
       - path: /*
         backend:
-          serviceName: mystok-simple-app
+          serviceName: mystok-gcp-app
           servicePort: 80
