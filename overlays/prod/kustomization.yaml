@@ -19,3 +19,7 @@ patchesJson6902:
     kind: Deployment
     name: mystok-gcp-deploy
   path: secret_name.json
+- target:
+    kind: Deployment
+    name: mystok-gcp-deploy
+  path: cloudsql_instanceName.json
