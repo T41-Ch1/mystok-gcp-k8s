@@ -2,5 +2,5 @@ resources:
 - mystok-gcp-app-deployment.yaml
 - mystok-gcp-app-hpa.yaml
 #- mystok-gcp-app-service.yaml
-- mystok-gcp-ingress.yaml
-- mystok-gcp-ssl-cert.yaml
+#- mystok-gcp-ingress.yaml
+#- mystok-gcp-ssl-cert.yaml

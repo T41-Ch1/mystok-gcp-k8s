@@ -1,11 +1,11 @@
 resources:
 - ../../base
 
-#patches:
-#- target:
-#    kind: Deployment
-#    name: mystok-gcp-app
-#  path: mystok-gcp-app-deployment.yaml
+patches:
+- target:
+    kind: Deployment
+    name: mystok-gcp-app
+  path: mystok-gcp-app-deployment.yaml
 #- target:
 #    kind: Ingress
 #    name: mystok-gcp-ingress
