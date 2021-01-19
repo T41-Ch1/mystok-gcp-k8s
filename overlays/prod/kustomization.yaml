@@ -22,4 +22,8 @@ patchesJson6902:
 - target:
     kind: Deployment
     name: mystok-gcp-deploy
+  path: volume_name.json
+- target:
+    kind: Deployment
+    name: mystok-gcp-deploy
   path: cloudsql_instanceName.json
