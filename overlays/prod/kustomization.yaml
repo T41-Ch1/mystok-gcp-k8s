@@ -3,8 +3,8 @@ kind: Kustomization
 resources:
 - ../../base
 commonLabels:
-  app: dev-mystok-gcp
-namePrefix: dev-
+  app: prod-mystok-gcp
+namePrefix: prod-
 patches:
 - target:
     kind: ManagedCertificate

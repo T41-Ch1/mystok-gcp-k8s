@@ -2,24 +2,15 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - ../../base
-
+commonLabels:
+  app: dev-mystok-gcp
+namePrefix: dev-
 patches:
 - target:
-    kind: Deployment
-    name: mystok-gcp-app
-  path: mystok-gcp-app-deployment.yaml
-#- target:
-#    kind: Ingress
-#    name: mystok-gcp-ingress
-#  path: sample.json
-
-#patchesJson6902:
-#- target:
-#    kind: Ingress
-#    name: mystok-ingress
-#  patch: mystok-gcp-ingress.yaml
-
-#patches:
-#- mystok-gcp-app-deployment.yaml
-#- mystok-gcp-ingress.yaml 
-#- mystok-gcp-ssl-cert.yaml
+    kind: ManagedCertificate
+    name: mystok-gcp-ssl-cert
+  path: domain.json
+- target:
+    kind: Ingress
+    name: mystok-ingress
+  path: static_ip.yaml

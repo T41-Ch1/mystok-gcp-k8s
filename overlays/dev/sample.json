@@ -1,3 +1,0 @@
-[
-   {"op": "replace", "path": "/metadata/annotaions/kubernetes.io/ingress.global-static-ip-name", "value": "dev-mystok-gcp-ip"}
-]
