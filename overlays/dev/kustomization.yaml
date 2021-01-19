@@ -16,6 +16,10 @@ patchesJson6902:
     name: mystok-gcp-deploy
   path: recreate_strategy.json
 - target:
+    kind: Deployment
+    name: mystok-gcp-deploy
+  path: secret_name.json
+- target:
     kind: ManagedCertificate
     name: mystok-gcp-ssl-cert
   path: domain.json
