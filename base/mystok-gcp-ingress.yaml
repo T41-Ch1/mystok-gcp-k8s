@@ -12,5 +12,5 @@ spec:
       paths:
       - path: /*
         backend:
-          serviceName: mystok-gcp-app
+          serviceName: mystok-gcp-service
           servicePort: 80

@@ -3,13 +3,13 @@ kind: Service
 metadata:
   cloud.google.com/neg: '{"ingress": true}'
   labels:
-    app: mystok-gcp-app
-  name: mystok-gcp-app
+    app: mystok-gcp
+  name: mystok-gcp-service
 spec:
   ports:
   - name: "80"
     port: 80
     targetPort: 80
   selector:
-    app: mystok-gcp-app
+    app: mystok-gcp
   type: ClusterIP

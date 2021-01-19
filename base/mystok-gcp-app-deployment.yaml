@@ -2,13 +2,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: mystok-gcp-app
-  name: mystok-gcp-app
+    app: mystok-gcp
+  name: mystok-gcp-deploy
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: mystok-gcp-app
+      app: mystok-gcp
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -17,12 +17,12 @@ spec:
   template:
     metadata:
       labels:
-        app: mystok-gcp-app
+        app: mystok-gcp
     spec:
       containers:
       - image: dekabitasp/mystok-gcp-app:latest
         imagePullPolicy: ""
-        name: mystok-gcp-app
+        name: mystok-gcp-tomcat
         ports:
         - containerPort: 80
         resources: 
