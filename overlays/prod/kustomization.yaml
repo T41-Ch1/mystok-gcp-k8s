@@ -7,10 +7,12 @@ commonLabels:
 namePrefix: prod-
 patches:
 - target:
-    kind: ManagedCertificate
-    name: mystok-gcp-ssl-cert
-  path: domain.json
-- target:
     kind: Ingress
     name: mystok-ingress
   path: static_ip.yaml
+patchesJson6902:
+- target:
+    kind: ManagedCertificate
+    name: mystok-gcp-ssl-cert
+  path: domain.json
+
