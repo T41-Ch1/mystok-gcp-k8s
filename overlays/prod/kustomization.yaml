@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
 - ../../base
 commonLabels:
-  app: dev-mystok-gcp-app
+  app: dev-mystok-gcp
 namePrefix: dev-
