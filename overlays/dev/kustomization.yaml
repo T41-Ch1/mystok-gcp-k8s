@@ -3,8 +3,8 @@ kind: Kustomization
 resources:
 - ../../base
 commonLabels:
-  app: dev-mystok-gcp
-namePrefix: dev-
+  app: mystok-gcp-dev
+nameSuffix: -dev
 patches:
 - target:
     kind: Ingress

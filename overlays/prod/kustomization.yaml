@@ -3,8 +3,8 @@ kind: Kustomization
 resources:
 - ../../base
 commonLabels:
-  app: prod-mystok-gcp
-namePrefix: prod-
+  app: mystok-gcp-prod
+nameSuffix: -prod
 patches:
 - target:
     kind: Ingress
