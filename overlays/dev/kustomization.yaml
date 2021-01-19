@@ -1,7 +1,10 @@
-bases:
-  - ../../base
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 
-pathces:
-- dev-mystok-gcp-app-deployment.yaml
-- dev-mystok-gcp-ingress.yaml 
-- dev-mystok-gcp-ssl-cert.yaml
+resources:
+- ../../base
+
+patches:
+- mystok-gcp-app-deployment.yaml
+- mystok-gcp-ingress.yaml 
+#- mystok-gcp-ssl-cert.yaml
