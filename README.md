@@ -54,3 +54,8 @@ gcloud compute firewall-rules create gke-to-kubeseal-8080 \
   --priority 1000
 
 kubectl apply -f https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.12.6/controller.yaml
+
+#########################
+kubesec encrypt --key=gcp:<resource-id of Google Cloud KMS key> secret.yml > sealed-secret.yaml
+
+kubesec decrypt secret.yaml
