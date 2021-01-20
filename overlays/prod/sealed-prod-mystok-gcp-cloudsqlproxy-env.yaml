@@ -1,0 +1,17 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    sealedsecrets.bitnami.com/cluster-wide: "true"
+  creationTimestamp: null
+  name: mystok-gcp-cloudsqlproxy-env
+spec:
+  encryptedData:
+    INSTANCE_CONNECTION_NAME: AgC2jNbVoIoXr5XPoQGFBNj1j+kkpKv/gMNe1QQQcdzIGQ1CSZj/aLJLt+PCslTLzeuFqdMnlDA7tCxUeVvmWwCgtctyHZBhruaWL3XAI72fGVi0/a3BoXvymqSjHEIotkK0/wqV4RyIsmM/dHBt8SfRD++a3rwduFvsIUn3hYV7Rei+MvegSwPgeKtImAmuYxnsYcgp0KQZuvktLDfIAcvhgXKEKgCg5raHTmyibvmhFt/aJvRyeqUWQxoK9blmi4sfK/YbfzvM0aQdw3Szynek2IZrjFGN13gAvWAwsC8+DlX53M7o85TVKtqr2kpfOGxonKf/yaUqJ/94WnTuPGHWqb/2fuMLt1xufV8a/UCC+BNbsf3yHer8kQHbGoOym74edjqWJLn9xAa/qcG0jrd8XalPQvVQF7in8TkEq4kTDsmij71nOciCZapXtusJZG+EWEipxcz8x4XCey7UaghU6ULydrx3EpjWCA3XjVC7inAGz2yboOvM8VzLbk9JGi7slu8Z54J9w633I4pf1uPWgSZR9Fyp+R2yG/jB0W40YJFFN/jGossqm/24RYu5qR1KVa8ys4DtmUfLG/9h3HQ6qCaQ/RpV1W2MmEyhiXW0a+JUddwwXh+JHnPES3nm5YA/IQOVa8sKAEJWV77pPiUDTQgKRF19m/FHU61o/D0VhKyPO8v8PDGY9WjcS9hP0j0L2/4EafxfxKbriVxDCaptJKglW6zKrbUaNv9dli0TBqJWDTL8HRoIy7K3bSC+nxwV1S6RLSFOXBwws3mJl1o67w==
+  template:
+    metadata:
+      annotations:
+        sealedsecrets.bitnami.com/cluster-wide: "true"
+      creationTimestamp: null
+      name: mystok-gcp-cloudsqlproxy-env
+
