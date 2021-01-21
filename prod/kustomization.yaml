@@ -11,7 +11,7 @@ resources:
 #- sealed-prod-mystok-gcp-gke-to-cloudstorage-sa-secret.yaml
 #commonLabels:
 #  app: mystok-gcp-prod
-#nameSuffix: -prod
+nameSuffix: -prod
 #patches:
 #- target:
 #    kind: Ingress
