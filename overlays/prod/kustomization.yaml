@@ -18,6 +18,10 @@ patches:
     kind: Ingress
     name: mystok-ingress
   path: static_ip.yaml
+- target:
+    kind: ManagedCertificate
+    name: mystok-gcp-ssl-cert
+  path: domain.yaml
 patchesJson6902:
 #- target:
 #    kind: ManagedCertificate
