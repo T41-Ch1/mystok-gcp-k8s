@@ -1,36 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../base/mystok-gcp-app-deployment.yaml
-- ../base/mystok-gcp-app-hpa.yaml
-- ../base/mystok-gcp-app-service.yaml
-- ../base/mystok-gcp-ingress.yaml
-- ../base/mystok-gcp-ssl-cert.yaml
-- sealed-prod-mystok-gcp-cloudsqlproxy-env.yaml
-- sealed-prod-mystok-gcp-cloudsqlproxy-sa-secret.yaml
-- sealed-prod-mystok-gcp-gke-to-cloudstorage-sa-secret.yaml
-commonLabels:
-  app: mystok-gcp-prod
-nameSuffix: -prod
-patches:
-- target:
-    kind: Ingress
-    name: mystok-ingress
-  path: static_ip.yaml
-patchesJson6902:
-- target:
-    kind: ManagedCertificate
-    name: mystok-gcp-ssl-cert
-  path: domain.json
-#- target:
-#    kind: Deployment
-#    name: mystok-gcp-deploy
-#  path: secret_name.json
-#- target:
-#    kind: Deployment
-#    name: mystok-gcp-deploy
-#  path: volume_name.json
-#- target:
-#    kind: Deployment
-#    name: mystok-gcp-deploy
-#  path: cloudsql_instanceName.json
+- ./mystok-gcp-app-deployment.yaml
+- mystok-gcp-app-hpa.yaml
+- mystok-gcp-app-service.yaml
+- mystok-gcp-ingress.yaml
+- mystok-gcp-ssl-cert.yaml
