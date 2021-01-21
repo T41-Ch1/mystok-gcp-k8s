@@ -6,22 +6,22 @@ resources:
 - mystok-gcp-app-service.yaml
 - mystok-gcp-ingress.yaml
 - mystok-gcp-ssl-cert.yaml
-- sealed-prod-mystok-gcp-cloudsqlproxy-env.yaml
-- sealed-prod-mystok-gcp-cloudsqlproxy-sa-secret.yaml
-- sealed-prod-mystok-gcp-gke-to-cloudstorage-sa-secret.yaml
-commonLabels:
-  app: mystok-gcp-prod
-nameSuffix: -prod
-patches:
-- target:
-    kind: Ingress
-    name: mystok-ingress
-  path: static_ip.yaml
-patchesJson6902:
-- target:
-    kind: ManagedCertificate
-    name: mystok-gcp-ssl-cert
-  path: domain.json
+#- sealed-prod-mystok-gcp-cloudsqlproxy-env.yaml
+#- sealed-prod-mystok-gcp-cloudsqlproxy-sa-secret.yaml
+#- sealed-prod-mystok-gcp-gke-to-cloudstorage-sa-secret.yaml
+#commonLabels:
+#  app: mystok-gcp-prod
+#nameSuffix: -prod
+#patches:
+#- target:
+#    kind: Ingress
+#    name: mystok-ingress
+#  path: static_ip.yaml
+#patchesJson6902:
+#- target:
+#    kind: ManagedCertificate
+#    name: mystok-gcp-ssl-cert
+#  path: domain.json
 #- target:
 #    kind: Deployment
 #    name: mystok-gcp-deploy
