@@ -1,4 +1,0 @@
-- op: replace
-  path: "/spec/template/spec/containers/1/env/0/valueFrom/secretKeyRef/name"
-  value: "prod-mystok-gcp-cloudsqlproxy-env"
-
