@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- github.com/T41-Ch1/mystok-gcp-k8s/base?ref=main
+- github.com/T41-Ch1/mystok-gcp-k8s/base
 - mystok-gcp-app-hpa.yaml
 - mystok-gcp-app-service.yaml
 - mystok-gcp-ingress.yaml
