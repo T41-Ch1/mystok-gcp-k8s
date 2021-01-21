@@ -20,7 +20,7 @@ spec:
         app: mystok-gcp
     spec:
       containers:
-      - image: dekabitasp/mystok-gcp-app:latest
+      - image: dekabitasp/mystok-app-image-conversion-ver2-202101071120
         imagePullPolicy: ""
         name: mystok-gcp-tomcat
         ports:
