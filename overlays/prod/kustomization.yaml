@@ -22,6 +22,10 @@ patches:
     kind: ManagedCertificate
     name: mystok-gcp-ssl-cert
   path: domain.yaml
+- target:
+    kind: Deployment
+    name: mystok-gcp-deploy
+  path: ref_secret_name.yaml
 patchesJson6902:
 #- target:
 #    kind: ManagedCertificate
