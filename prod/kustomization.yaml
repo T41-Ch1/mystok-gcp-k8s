@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - ../base/mystok-gcp-app-deployment.yaml
 - ../base/mystok-gcp-app-hpa.yaml
-- ../basemystok-gcp-app-service.yaml
+- ../base/mystok-gcp-app-service.yaml
 - ../base/mystok-gcp-ingress.yaml
 - ../base/mystok-gcp-ssl-cert.yaml
 - sealed-prod-mystok-gcp-cloudsqlproxy-env.yaml
