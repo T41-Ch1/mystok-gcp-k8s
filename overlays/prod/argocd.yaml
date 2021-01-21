@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mystok-gcp-prod
+spec:
+  destination:
+    name: ''
+    namespace: default
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: overlays/prod
+    repoURL: 'https://github.com/T41-Ch1/mystok-gcp-k8s.git'
+    targetRevision: HEAD
+  project: default
