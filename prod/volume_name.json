@@ -1,0 +1,6 @@
+- op: replace
+  path: "/spec/template/spec/containers/0/volumeMounts/0/name"
+  value: "prod-mystok-gcp-gke-to-cloudstorage-sa-secret-volume"
+- op: replace
+  path: "/spec/template/spec/containers/1/volumeMounts/0/name"
+  value: "prod-mystok-gcp-cloudsqlproxy-sa-secret-volume"
