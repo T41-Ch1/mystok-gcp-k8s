@@ -1,7 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../base
+- ../base/mystok-gcp-app-deployment.yaml
+- ../base/mystok-gcp-app-hpa.yaml
+- ../basemystok-gcp-app-service.yaml
+- ../base/mystok-gcp-ingress.yaml
+- ../base/mystok-gcp-ssl-cert.yaml
 - sealed-prod-mystok-gcp-cloudsqlproxy-env.yaml
 - sealed-prod-mystok-gcp-cloudsqlproxy-sa-secret.yaml
 - sealed-prod-mystok-gcp-gke-to-cloudstorage-sa-secret.yaml
