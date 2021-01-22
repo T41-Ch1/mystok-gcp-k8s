@@ -71,3 +71,5 @@ kubectl apply -f https://github.com/bitnami-labs/sealed-secrets/releases/downloa
 kubesec encrypt --key=gcp:<resource-id of Google Cloud KMS key> secret.yml > sealed-secret.yaml
 
 kubesec decrypt secret.yaml
+
+kubeseal のときは -o yaml しないとデフォでjson出力
