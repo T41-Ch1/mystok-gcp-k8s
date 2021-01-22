@@ -1,0 +1,5 @@
+resources:
+- sealed-dev-mystok-gcp-cloudsqlproxy-env.yaml
+- sealed-dev-mystok-gcp-cloudsqlproxy-sa-secret.yaml
+- sealed-dev-mystok-gcp-gke-to-cloudstorage-sa-secret.yaml
+

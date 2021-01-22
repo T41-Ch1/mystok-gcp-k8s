@@ -1,0 +1,25 @@
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata": {
+    "name": "mystok-gcp-cloudsqlproxy-env",
+    "creationTimestamp": null,
+    "annotations": {
+      "sealedsecrets.bitnami.com/cluster-wide": "true"
+    }
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "name": "mystok-gcp-cloudsqlproxy-env",
+        "creationTimestamp": null,
+        "annotations": {
+          "sealedsecrets.bitnami.com/cluster-wide": "true"
+        }
+      }
+    },
+    "encryptedData": {
+      "INSTANCE_CONNECTION_NAME": "AgBGCs8hfC5QVjtyMQbPVXF8rcBFB+Q/ay32UTBF30YbjRUMgGsoreUZY7Wu3Z5Yqdt4mIc8xJfqkNoW5Ad1CuGfJDW3rBaT1Ff7ETuufL4UEbcuoEfelVZPaml/eHfBZoxRTxRgia2d70+n29qMBYG2Cl65CHFXV8TxMHpK4x/gGVmhIBxyzNFE7pJg+XHwAAw6UszBlMpxqbvja0pZk8xg6vIWubJa0Ulg5i95gBCby0qVPb75zFcjPt2UI89yBpZmO6rjZ+PEuHn2HSJhBsu+00c2HzzcoCbIIkXCa2Z+gcq5KshzeSWQrDkWoS09TuXMna9JUPQt4GxFxf7xskkZHCFLklW4NxA5ORAX71Y+hBUTNFhlXXK9pFOw6s3VJYZAmzlQMT05znpmL45JIAVODPmO0h5YhB8ZlEjKuPT4AMdqB3QO/37Caz0nyCSgGA79AYu0zQZHsQTt+0BQNrLPzYVbXFMCVbNMjQa1edP2kmmLleEvOD2SIvu53bdfKiV/vMYPcPATffhKdbBLL9DbKe/+j9m+nkYfz5+sP1aWD8/Tq4oCJdCDuEI2CLQ6E3rC1JAivyiHysoBB4+q/wv+4/zJSwZoOkTaXqz+wTxiD8s92gY0rief9aQJgTAQEdWqRZMy0ENS2WQMih+/SvjRp4uy/Gzr5jeNpdu2eg65akLlJmuWl85P2GiGlS0EicnnguNV3dKPQY5wqLO50YLKzh7pm+x9Tee2qB4b0AHxdOHxzYg2LnJhQ4sc4FE4d5XBXxfjgC/CK9nKGis="
+    }
+  }
+}
