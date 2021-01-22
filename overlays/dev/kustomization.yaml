@@ -9,7 +9,7 @@ patches:
 - target:
     kind: Ingress
     name: mystok-ingress
-  path: static_ip.yaml
+  path: ./kustomize/static_ip.yaml
 - target:
     kind: ManagedCertificate
     name: mystok-gcp-ssl-cert
@@ -21,4 +21,4 @@ patches:
 - target:
     kind: Deployment
     name: mystok-gcp-deploy
-  path: recreate_strategy.yaml
+  path: ./kustomize/recreate_strategy.yaml
