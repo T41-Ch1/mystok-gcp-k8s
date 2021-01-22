@@ -3,9 +3,6 @@ kind: Kustomization
 resources:
 - ../../base
 - sealed
-#- sealed-prod-mystok-gcp-cloudsqlproxy-env.yaml
-#- sealed-prod-mystok-gcp-cloudsqlproxy-sa-secret.yaml
-#- sealed-prod-mystok-gcp-gke-to-cloudstorage-sa-secret.yaml
 commonLabels:
   app: mystok-gcp-prod
 nameSuffix: -prod

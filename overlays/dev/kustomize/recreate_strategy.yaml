@@ -4,4 +4,4 @@ metadata:
   name: mystok-gcp-deploy
 spec:
   strategy:
-    type: Recreate
+    type: "Recreate"

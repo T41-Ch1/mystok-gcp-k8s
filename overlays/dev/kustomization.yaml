@@ -19,7 +19,3 @@ patches:
     kind: Deployment
     name: mystok-gcp-deploy
   path: ./kustomize/ref_secret_name.yaml
-#- target:
-#    kind: Deployment
-#    name: mystok-gcp-deploy
-#  path: ./kustomize/recreate_strategy.yaml
