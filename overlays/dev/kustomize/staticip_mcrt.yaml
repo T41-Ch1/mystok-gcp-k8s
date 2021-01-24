@@ -4,3 +4,4 @@ metadata:
   name: mystok-ingress
   annotations:
     kubernetes.io/ingress.global-static-ip-name: mystok-gcp-ip-dev
+    networking.gke.io/managed-certificates: mystok-gcp-ssl-cert-dev
