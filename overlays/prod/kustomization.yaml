@@ -10,7 +10,7 @@ patches:
 - target:
     kind: Ingress
     name: mystok-ingress
-  path: ./kustomize/static_ip.yaml
+  path: ./kustomize/staticip_mcrt.yaml
 - target:
     kind: ManagedCertificate
     name: mystok-gcp-ssl-cert
