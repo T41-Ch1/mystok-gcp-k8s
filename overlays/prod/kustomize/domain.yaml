@@ -4,4 +4,4 @@ metadata:
   name: mystok-gcp-ssl-cert
 spec:
   domains:
-    - mystokk.work
+    - mystok.work

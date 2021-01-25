@@ -1,4 +1,5 @@
 kubesec decrypt kubesec-prod-mystok-gcp-sealedsecret-cert.yaml | k apply -f -
+kubesec decrypt kubesec-dev-mystok-gcp-sealedsecret-cert.yaml | k apply -f -
 
 kubectl apply -f https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.12.6/controller.yaml
 
@@ -11,6 +12,7 @@ kubectl apply -f argocd_application.yaml -n argocd
 
 kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
 kubectl port-forward svc/argocd-server -n argocd 8080:443
+kubectl port-forward svc/argocd-server -n argocd 8090:443
 
 
 kustomize build . | k apply -f -
