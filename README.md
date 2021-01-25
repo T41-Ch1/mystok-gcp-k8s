@@ -75,3 +75,10 @@ kubesec encrypt --key=gcp:<resource-id of Google Cloud KMS key> secret.yml > sea
 kubesec decrypt secret.yaml
 
 kubeseal のときは -o yaml しないとデフォでjson出力
+
+#############################
+rm all mcrt
+gcloud compute ssl-certificates delete `gcloud compute ssl-certificates list | awk '{print $1}' | awk 'NR%2!=1'`
+
+rm all neg
+GUIコンソールから消すのがよき
