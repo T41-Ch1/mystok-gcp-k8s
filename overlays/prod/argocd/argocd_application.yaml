@@ -2,6 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: mystok-gcp-prod
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: dekabitasp/mystok-gcp-app
+    argocd-image-updater.argoproj.io/mystok-gcp-app.update-strategy: name
 spec:
   destination:
     name: ''
