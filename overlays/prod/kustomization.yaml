@@ -19,3 +19,7 @@ patches:
     kind: Deployment
     name: mystok-gcp-deploy
   path: ./kustomize/ref_secret_name.yaml
+images:
+- name: dekabitasp/mystok-gcp-app-prod
+  newName: dekabitasp/mystok-gcp-app-prod
+  newTag: 20210128-1617 # {"$imagepolicy": "flux-system:mystok-gcp-k8s:tag"}
