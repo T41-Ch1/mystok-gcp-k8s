@@ -50,6 +50,9 @@ spec:
         env:
         - name: GOOGLE_APPLICATION_CREDENTIALS
           value: /var/secrets/google/service-account-app.json
+        envFrom:
+        - secretRef:
+          name: mystok-gcp-java-env-secret
       - image: gcr.io/cloudsql-docker/gce-proxy:1.17
         name: cloud-sql-proxy
         command:
