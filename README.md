@@ -28,7 +28,7 @@ kubectl -n  "$NAMESPACE" delete pod -l name=sealed-secrets-controller
 
 kubectl -n "$NAMESPACE" logs -l name=sealed-secrets-controller
 
-kubeseal --cert "./${PUBLICKEY}" --scope cluster-wide < mysecret.yaml | kubectl apply -f-
+kubeseal --cert "./${PUBLICKEY}" --scope cluster-wide -o yaml < mysecret.yaml > sealed-mysecret.yaml
 
 kubectl -n "$NAMESPACE" logs -l name=sealed-secrets-controller
 
