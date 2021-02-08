@@ -78,6 +78,8 @@ kubesec decrypt secret.yaml
 
 kubeseal のときは -o yaml しないとデフォでjson出力
 
+cluster-wideとアノテーションもつける
+
 #############################
 rm all mcrt
 gcloud compute ssl-certificates delete `gcloud compute ssl-certificates list | awk '{print $1}' | awk 'NR%2!=1'`
